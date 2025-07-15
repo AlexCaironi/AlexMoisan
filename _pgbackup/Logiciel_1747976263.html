@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <title>Alex Moisan - Logiciels & Hardware</title>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Azeret+Mono&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet"/>
+        <style>
+        /* Reset simple */
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: 'Azeret Mono', monospace;
+            background-color: #fff;
+            color: #000;
+            line-height: 1.5;
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        header, nav, footer {
+            background-color: #f8f8f8;
+            padding: 1em 2em;
+        }
+        header .logo {
+            font-family: 'Bebas Neue', cursive, sans-serif;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #000;
+        }
+        nav ul.links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 2em;
+        }
+        nav ul.links li a {
+            font-weight: 600;
+            font-family: 'Bebas Neue', cursive, sans-serif;
+        }
+        nav ul.links li.active a {
+            text-decoration: underline;
+        }
+        nav ul.icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 1em;
+            margin-top: 0.5em;
+        }
+        nav ul.icons li a {
+            font-size: 1.2rem;
+            color: #000;
+            display: inline-block;
+        }
+        #main {
+            max-width: 1100px;
+            margin: 2em auto;
+            padding: 0 1em;
+        }
+        h2.section-title {
+            font-family: 'Bebas Neue', cursive, sans-serif;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #000;
+            padding-bottom: 0.3em;
+        }
+        /* Grid for software and hardware items */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding-bottom: 2rem;
+        }
+        .item {
+            text-align: center;
+            background: none;
+            border: none;
+            padding: 1rem;
+            max-width: 300px;
+            width: 100%;
+            color: inherit;
+            transition: transform 0.3s ease;
+            cursor: default;
+        }
+        .item:hover {
+            transform: translateY(-5px);
+        }
+        .item img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 0.5rem;
+            transition: transform 0.3s ease;
+            background-color: transparent;
+        }
+        .item img:hover {
+            transform: scale(1.1);
+        }
+        .item h3 {
+            font-family: 'Bebas Neue', cursive, sans-serif;
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0 0;
+            color: #000;
+        }
+    </style>
+    </head>
+    <body>
+        <header><a href="index.html" class="logo">PORTFOLIO</a>
+        </header>
+        <nav>
+            <ul class="links">
+                <li>
+                    <a href="index2.html">BIO</a>
+                </li>
+                <li>
+                    <a href="travaux.html">TRAVAUX</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+                <li class="active">
+                    <a href="logiciel.html">LOGICIELS & HARDWARE</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="main">
+            <h2 class="section-title">Logiciels</h2>
+            <section class="software-section grid">
+                <article class="item software-item">
+                    <img alt="Pro Tools" src="PT2019.png" loading="lazy"/>
+                    <h3>Pro Tools</h3>
+                </article>
+                <article class="item software-item">
+                    <img alt="Ableton Live" src="Ableton-Live.png"/>
+                    <h3>Ableton</h3>
+                </article>
+                <article class="item software-item">
+                    <img alt="Logic Pro" src="Logic_Pro_icon.png"/>
+                    <h3>Logic Pro</h3>
+                </article>
+                <article class="item software-item">
+                    <img alt="Final Cut Pro" src="2015_Final_Cut_Pro_Logo.png"/>
+                    <h3>Final Cut Pro</h3>
+                </article>
+                <article class="item software-item">
+                    <img alt="Da Vinci Resolve" src="DaVinci_Resolve_Studio.png"/>
+                    <h3>Da Vinci Resolve</h3>
+                </article>
+                <article class="item software-item">
+                    <img alt="Voice Q" src="61f89674734acc4149d3582e_Pro-Generic@1024.png"/>
+                    <h3>Voice Q</h3>
+                </article>
+                <article class="item software-item">
+                    <img alt="Dante" src="dante-certification-training-l3-logo.jpg"/>
+                    <h3>Dante</h3>
+                </article>
+                <article class="item software-item">
+                    <img alt="Smaart" src="download.png"/>
+                    <h3>Smaart</h3>
+                </article>
+                <article class="item software-item">
+                    <img alt="Plugin Alliance" src="608a7a166a5ffc14ee091480_12-of-the-best-plugin-alliance-plugins-on-the-market.webp"/>
+                    <h3>Suite de Plugin Alliance</h3>
+                </article>
+                <article class="item software-item">
+                    <img alt="SoundToys" src="images.png"/>
+                    <h3>SoundToys</h3>
+                </article>
+            </section>
+            <h2 class="section-title">Matériel</h2>
+            <section class="hardware-section grid">
+                <article class="item hardware-item">
+                    <img alt="Scarlett 18i20" src="Scarlett_18i20_-_Lead_image_-_2400x2400__25666.webp"/>
+                    <h3>Scarlett 18i20</h3>
+                </article>
+                <article class="item hardware-item">
+                    <img alt="Prophet Rev 2" src="ProphetRev2_Left-Angle.png"/>
+                    <h3>Prophet Rev 2</h3>
+                </article>
+                <article class="item hardware-item">
+                    <img alt="Adam Audio T5V" src="adam-t5v.png"/>
+                    <h3>Adam Audio T5V</h3>
+                </article>
+                <article class="item hardware-item">
+                    <img alt="Korg MS20" src="b0c03311ca5885c519ce17f7b25094c6_sp.png"/>
+                    <h3>Korg MS20</h3>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <section class="split contact"></section>
+        </footer>
+    </body>
+</html>

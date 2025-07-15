@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Alex Moisan - Travaux</title>
+        <!-- Polices Google -->
+        <link href="https://fonts.googleapis.com/css?family=Azeret+Mono&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet"/>
+        <style>/* Reset simple */* { box-sizing: border-box; } body { margin: 0; font-family: 'Azeret Mono', monospace; background-color: #fff; color: #000; line-height: 1.5; } a { color: #000; text-decoration: none; } a:hover { text-decoration: underline; } header, nav, footer { background-color: #f8f8f8; padding: 1em 2em; } header .logo { font-family: 'Bebas Neue', cursive, sans-serif; font-size: 1.8rem; font-weight: bold; color: #000; } nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 2em; } nav ul li a { font-weight: 600; } nav ul li.active a { text-decoration: underline; } #main { max-width: 1100px; margin: 2em auto; padding: 0 1em; } h2.section-title { font-family: 'Bebas Neue', cursive, sans-serif; font-size: 2.2rem; margin-bottom: 1rem; border-bottom: 2px solid #000; padding-bottom: 0.3em; } /* Section vidéo + texte côte à côte */.video-section { display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 3rem; align-items: flex-start; } .video-section iframe { flex: 1 1 600px; min-width: 280px; height: 340px; border: none; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); } .video-info { flex: 1 1 320px; font-size: 1rem; color: #222; } .video-info p { margin: 0.4em 0; } .video-info strong { font-weight: 700; } .disclaimer { margin-top: 1em; font-size: 0.85rem; color: #666; font-style: italic; } /* Album cover */.album-section { margin-bottom: 3rem; text-align: left; } .album-cover { max-width: 320px; border-radius: 8px; overflow: hidden; box-shadow: 0 6px 12px rgba(0,0,0,0.15); cursor: pointer; transition: transform 0.3s ease; display: inline-block; } .album-cover img { width: 100%; display: block; } .album-cover:hover { transform: scale(1.04); } .album-caption { margin-top: 0.5em; font-size: 1rem; font-style: italic; color: #333; max-width: 320px; } /* Responsive */@media (max-width: 768px) { .video-section {  flex-direction: column; }  .video-section iframe, .video-info {  flex: 1 1 100%;  height: 220px; }  .album-cover, .album-caption {  max-width: 100%; } }</style>
+    </head>
+    <body>
+        <header><a href="index.html" class="logo">PORTFOLIO</a>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" style="font-family: 'Bebas Neue', sans-serif;">BIO</a>
+                </li>
+                <li class="active">
+                    <a href="travaux.html" style="font-family: 'Bebas Neue', sans-serif;">TRAVAUX</a>
+                </li>
+                <li>
+                    <a href="contact.html" style="font-family: 'Bebas Neue', sans-serif;">CONTACT</a>
+                </li>
+                <li>
+                    <a href="Logiciel.html" style="font-family: 'Bebas Neue', sans-serif;">LOGICIELS & HARDWARE</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="main">
+            <!-- Silent Hill 2 Remake -->
+            <section>
+                <h2 class="section-title">Sound design et composition</h2>
+                <div class="video-section">
+                    <iframe src="https://www.youtube.com/embed/Himqe4DzXJQ" title="Silent Hill 2 - Remake" allowfullscreen loading="lazy"></iframe>
+                    <div class="video-info">
+                        <p style="font-family: 'Bebas Neue', sans-serif;"><strong>Composition et sound design :</strong> Alex Moisan</p>
+                        <p style="font-family: 'Bebas Neue', sans-serif;"><strong>Voix Marie :</strong> Hallison Harvey</p>
+                        <p style="font-family: 'Bebas Neue', sans-serif;"><strong>Voix James :</strong> Ulysse Potvin</p>
+                        <p style="font-family: 'Bebas Neue', sans-serif;"><strong>Voix Eddie :</strong> Simon Gaudreault</p>
+                        <p style="font-family: 'Bebas Neue', sans-serif;"><strong>Voix Angela :</strong> Diane Bonin</p>
+                        <p class="disclaimer" style="font-family: 'Bebas Neue', sans-serif; font-weight: 700; color: #000000;">
+                    Je ne détiens aucun droit sur cette vidéo. Elle est utilisée uniquement dans le cadre d’un projet scolaire, à des fins non commerciales. </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Capturne -->
+            <section class="album-section">
+                <h2 class="section-title">BAND</h2><a href="https://capturne.bandcamp.com/album/capturne" target="_blank" class="album-cover" rel="noopener noreferrer"> <img src="IMG/0017841826_10.jpg" alt="Pochette d'album Capturne"/> </a>
+                <p class="album-caption" style="font-family: 'Bebas Neue', sans-serif;">Co-composé avec Léo Couture et Lucas Terrier</p>
+            </section>
+            <!-- Mourir à Ibiza -->
+            <section>
+                <h2 class="section-title">Acting</h2>
+                <div class="video-section">
+                    <iframe src="https://www.youtube.com/embed/qfGfhim21h0" title="Mourir à Ibiza" allowfullscreen loading="lazy"></iframe>
+                    <div class="video-info">
+                        <p style="font-family: 'Bebas Neue', sans-serif;"><strong>Film :</strong> Mourir à Ibiza</p>
+                        <p style="font-family: 'Bebas Neue', sans-serif;"><strong style="font-family: 'Bebas Neue', sans-serif;">Réalisateurs :</strong> Anton Balekdjian, Léo Couture, Mattéo Eustachon</p>
+                        <p><strong style="font-family: 'Bebas Neue', sans-serif;">Rôle : Maurice</strong></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="split contact"></section>
+        </footer>
+    </body>
+</html>
