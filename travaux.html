@@ -1,229 +1,104 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Alex Moisan - Travaux</title>
-        <!-- Polices Google -->
-        <link href="https://fonts.googleapis.com/css?family=Azeret+Mono&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet"/>
-        <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            margin: 0;
-            font-family: 'Azeret Mono', monospace;
-            background-color: #fff;
-            color: #000;
-            line-height: 1.5;
-        }
-        a {
-            color: #000;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        header, nav, footer {
-            background-color: #f8f8f8;
-            padding: 1em 2em;
-        }
-        header .logo {
-            font-family: 'Bebas Neue', cursive, sans-serif;
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #000;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            gap: 2em;
-        }
-        nav ul li a {
-            font-weight: 600;
-        }
-        nav ul li.active a {
-            text-decoration: underline;
-        }
-        #main {
-            max-width: 1100px;
-            margin: 2em auto;
-            padding: 0 1em;
-        }
-        h2.section-title {
-            font-family: 'Bebas Neue', cursive, sans-serif;
-            font-size: 2.2rem;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid #000;
-            padding-bottom: 0.3em;
-        }
-        /* Section vidéo avec animation */
-        .video-section {
-            display: flex;
-            flex-direction: column;
-            gap: 3rem;
-            margin-bottom: 3rem;
-        }
-        .video-block {
-            width: 100%;
-        }
-        .video-title {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 1.4rem;
-            margin-bottom: 0.4rem;
-            margin-left: 0.3rem;
-        }
-        .video-wrapper {
-            position: relative;
-            overflow: hidden;
-            border-radius: 8px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .video-wrapper:hover {
-            transform: scale(1.02);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-        .video-wrapper iframe {
-            width: 100%;
-            height: 400px;
-            border: none;
-            display: block;
-        }
-        .video-info {
-            font-size: 1rem;
-            color: #222;
-            margin-top: 0.5em;
-        }
-        .video-info p {
-            margin: 0.4em 0;
-        }
-        .video-info strong {
-            font-weight: 700;
-        }
-        .disclaimer {
-            margin-top: 1em;
-            font-size: 0.85rem;
-            color: #666;
-            font-style: italic;
-        }
-        .album-section {
-            margin-bottom: 3rem;
-            text-align: left;
-        }
-        .album-cover {
-            max-width: 320px;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            display: inline-block;
-        }
-        .album-cover img {
-            width: 100%;
-            display: block;
-        }
-        .album-cover:hover {
-            transform: scale(1.04);
-        }
-        .album-caption {
-            margin-top: 0.5em;
-            font-size: 1rem;
-            font-style: italic;
-            color: #333;
-            max-width: 320px;
-        }
-        @media (max-width: 768px) {
-            .video-wrapper iframe {
-                height: 220px;
-            }
-            .album-cover, .album-caption {
-                max-width: 100%;
-            }
-        }
-    </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Alex Moisan – Travaux</title>
+        <!-- Google Fonts -->
+        <link href="css/theme.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Azeret+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <style>* { box-sizing: border-box; } body { margin: 0; font-family: 'Azeret Mono', monospace; background: #fff; color: #000; line-height: 1.5; } a { color: #000; text-decoration: none; } a:hover { text-decoration: underline; } header, nav, footer { background: #f8f8f8; padding: 1em 2em; } header .logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; font-weight: bold; } nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 2em; } nav li.active a { text-decoration: underline; } #main { max-width: 1100px; margin: 2em auto; padding: 0 1em; } h2.section-title { font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; border-bottom: 2px solid #000; margin-bottom: 1.5rem; padding-bottom: .3em; } .video-section { display: flex; flex-direction: column; gap: 3rem; margin-bottom: 3rem; } .video-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; margin-bottom: .4rem; } .video-wrapper { border-radius: 8px; overflow: hidden; transition: transform .3s ease, box-shadow .3s ease; } .video-wrapper:hover { transform: scale(1.02); box-shadow: 0 8px 16px rgba(0,0,0,.2); } .video-wrapper iframe { width: 100%; height: 400px; border: none; display: block; } .video-info p { margin: .4em 0; font-family: 'Bebas Neue', sans-serif; } .disclaimer { font-size: .85rem; color: #666; font-style: italic; } .album-section { margin-bottom: 3rem; } .album-cover { max-width: 320px; display: inline-block; border-radius: 8px; overflow: hidden; box-shadow: 0 6px 12px rgba(0,0,0,.15); transition: transform .3s ease; } .album-cover:hover { transform: scale(1.04); } .album-cover img { width: 100%; display: block; } .album-caption { margin-top: .5em; font-family: 'Bebas Neue', sans-serif; font-style: italic; } @media (max-width: 768px) { .video-wrapper iframe {  height: 220px; }  .album-cover {  max-width: 100%; } }</style>
     </head>
     <body>
-        <header><a href="index.html" class="logo">PORTFOLIO</a>
+        <header>
+            <a href="index.html" class="logo">PORTFOLIO</a>
         </header>
         <nav>
             <ul>
-                <li>
-                    <a href="index.html" style="font-family: 'Bebas Neue', sans-serif;">BIO</a>
+                <li><a href="index.html" style="font-family:'Bebas Neue',sans-serif;">BIO</a>
                 </li>
-                <li class="active">
-                    <a href="travaux.html" style="font-family: 'Bebas Neue', sans-serif;">TRAVAUX</a>
+                <li class="active"><a href="travaux.html" style="font-family:'Bebas Neue',sans-serif;">TRAVAUX</a>
                 </li>
-                <li>
-                    <a href="contact.html" style="font-family: 'Bebas Neue', sans-serif;">CONTACT</a>
+                <li><a href="contact.html" style="font-family:'Bebas Neue',sans-serif;">CONTACT</a>
                 </li>
-                <li>
-                    <a href="Logiciel.html" style="font-family: 'Bebas Neue', sans-serif;">LOGICIELS & HARDWARE</a>
+                <li><a href="Logiciel.html" style="font-family:'Bebas Neue',sans-serif;">LOGICIELS & HARDWARE</a>
                 </li>
             </ul>
         </nav>
         <main id="main">
-            <!-- Sound design et composition -->
+            <!-- SOUND DESIGN -->
             <section>
                 <h2 class="section-title">Sound design et composition</h2>
                 <div class="video-section">
-                    <!-- Silent Hill -->
-                    <div class="video-block">
-                        <div class="video-title">Silent Hill 2 - Remake</div>
+                    <div>
+                        <div class="video-title">Silent Hill 2 – Remake</div>
                         <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/Himqe4DzXJQ" title="Silent Hill 2 - Remake" allowfullscreen loading="lazy"></iframe>
+                            <iframe src="https://www.youtube.com/embed/Himqe4DzXJQ" allowfullscreen loading="lazy"></iframe>
                         </div>
                         <div class="video-info">
-                            <p style="font-family: 'Bebas Neue', sans-serif;"><strong>Composition et sound design :</strong> Alex Moisan</p>
-                            <p style="font-family: 'Bebas Neue', sans-serif;"><strong>Voix Marie :</strong> Hallison Harvey</p>
-                            <p style="font-family: 'Bebas Neue', sans-serif;"><strong>Voix James :</strong> Ulysse Potvin</p>
-                            <p style="font-family: 'Bebas Neue', sans-serif;"><strong>Voix Eddie :</strong> Simon Gaudreault</p>
-                            <p style="font-family: 'Bebas Neue', sans-serif;"><strong>Voix Angela :</strong> Diane Bonin</p>
-                            <p class="disclaimer" style="font-family: 'Bebas Neue', sans-serif;">
-                            Je ne détiens aucun droit sur cette vidéo. Elle est utilisée uniquement dans le cadre d’un projet scolaire, à des fins non commerciales. </p>
+                            <p><strong>Composition & sound design :</strong> Alex Moisan</p>
+                            <p><strong>Voix :</strong> Hallison Harvey, Ulysse Potvin, Simon Gaudreault, Diane Bonin</p>
+                            <p class="disclaimer">Projet scolaire – utilisation non commerciale</p>
                         </div>
                     </div>
-                    <!-- Tron Ares -->
-                    <div class="video-block">
-                        <div class="video-title">Tron Ares </div>
+                    <div>
+                        <div class="video-title">Tron Ares – Grands ensembles</div>
                         <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/_fr1OGj4PsQ" title="Tron Ares" allowfullscreen loading="lazy"></iframe>
+                            <iframe src="https://www.youtube.com/embed/_fr1OGj4PsQ" allowfullscreen loading="lazy"></iframe>
                         </div>
                         <div class="video-info">
-                            <p style="font-family: 'Bebas Neue', sans-serif;"><strong>Composition et sound design :</strong> Alex Moisan</p>
-                            <p class="disclaimer" style="font-family: 'Bebas Neue', sans-serif;">
-                            Je ne détiens aucun droit sur cette vidéo. Elle est utilisée uniquement dans le cadre d’un projet scolaire, à des fins non commerciales. </p>
+                            <p><strong>Composition & sound design :</strong> Alex Moisan</p>
+                            <p class="disclaimer">Projet scolaire – utilisation non commerciale</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="video-title">Chased through Bangkok</div>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/fVV35s7dKY8" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <p><strong>Sound design & composition :</strong> Alex Moisan</p>
+                            <p class="disclaimer">Projet scolaire – utilisation non commerciale</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- Capturne -->
-            <section class="album-section">
-                <h2 class="section-title">BAND</h2><a href="https://capturne.bandcamp.com/album/capturne" target="_blank" class="album-cover" rel="noopener noreferrer"> <img src="IMG/0017841826_10.jpg" alt="Pochette d'album Capturne"/> </a>
-                <p class="album-caption" style="font-family: 'Bebas Neue', sans-serif;">Co-composé avec Léo Couture et Lucas Terrier</p>
+            <!-- DOUBLAGE -->
+            <section>
+                <h2 class="section-title">Doublage</h2>
+                <div class="video-section">
+                    <div>
+                        <div class="video-title">Bande démo</div>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/w9W166Y8HQc" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <!-- Mourir à Ibiza -->
+            <!-- ACTING -->
             <section>
                 <h2 class="section-title">Acting</h2>
                 <div class="video-section">
-                    <div class="video-block">
+                    <div>
                         <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/qfGfhim21h0" title="Mourir à Ibiza" allowfullscreen loading="lazy"></iframe>
+                            <iframe src="https://www.youtube.com/embed/qfGfhim21h0" allowfullscreen loading="lazy"></iframe>
                         </div>
                         <div class="video-info">
-                            <p style="font-family: 'Bebas Neue', sans-serif;"><strong>Film :</strong> Mourir à Ibiza</p>
-                            <p style="font-family: 'Bebas Neue', sans-serif;"><strong>Réalisateurs :</strong> Anton Balekdjian, Léo Couture, Mattéo Eustachon</p>
-                            <p style="font-family: 'Bebas Neue', sans-serif;"><strong>Rôle :</strong> Maurice</p>
+                            <p><strong>Film :</strong> Mourir à Ibiza</p>
+                            <p><strong>Rôle :</strong> Maurice</p>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- BAND -->
+            <section class="album-section">
+                <h2 class="section-title">BAND</h2>
+                <a href="https://capturne.bandcamp.com/album/capturne" target="_blank" class="album-cover" rel="noopener noreferrer"> <img src="IMG/0017841826_10.jpg" alt="Pochette Capturne"> </a>
+                <p class="album-caption">Co-composé avec Léo Couture et Lucas Terrier</p>
+            </section>
         </main>
-        <footer>
-            <section class="split contact"></section>
-        </footer>
+        <footer></footer>
     </body>
 </html>
+
