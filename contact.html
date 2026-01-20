@@ -4,10 +4,12 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Alex Moisan - Contact</title>
+
     <!-- Polices Google -->
     <link href="css/theme.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Azeret+Mono&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet"/>
+
     <style>
         * { box-sizing: border-box; }
         body { margin: 0; font-family: 'Azeret Mono', monospace; background-color: #fff; color: #000; line-height: 1.5; }
@@ -52,24 +54,26 @@
         </div>
 
         <!-- Formulaire -->
-        <form action="https://formsubmit.co/alex.0169@hotmail.com" method="POST">
+        <form id="contact-form" action="https://formsubmit.co/alex.0169@hotmail.com" method="POST">
             <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_subject" value="Nouveau message depuis ton portfolio">
+            <input type="hidden" name="_subject" value="Message depuis le portfolio Alex Moisan">
             <input type="hidden" name="_template" value="box">
-            
-            <!-- Redirection après envoi -->
-            <input type="hidden" name="_next" value="https://alexmoisan.github.io/contact.html?success=1">
+            <input type="hidden" name="_next" value="https://alexmoisan.com/contact.html?success=1">
 
             <!-- Honeypot anti-spam -->
             <input type="text" name="_honey" style="display:none">
 
             <div class="form-group">
                 <label for="nom">Nom</label>
-                <input type="text" id="nom" name="nom" required/>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
                 <label for="objet">Objet</label>
-                <input type="text" id="objet" name="objet" required/>
+                <input type="text" id="objet" name="objet" required>
             </div>
             <div class="form-group">
                 <label for="message">Message</label>
@@ -79,20 +83,20 @@
         </form>
     </main>
     <footer>
-        <p style="text-align: center; font-size: 0.85rem; color: #666;">&copy; 2026 Alex Moisan</p>
+        <p style="text-align: center; font-size: 0.85rem; color: #666;">&copy; 2025 Alex Moisan</p>
     </footer>
 
-    <!-- Script pour afficher le message de confirmation et vider le formulaire -->
+    <!-- Script pour afficher la confirmation et vider le formulaire -->
     <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('success') === '1') {
+        const urlParams = new URLSearchParams(window.location.search);
         const confirmation = document.getElementById('confirmation');
-        confirmation.style.display = 'block';
+        const form = document.getElementById('contact-form');
 
-        // vider le formulaire après envoi
-        const form = document.querySelector('form');
-        if (form) form.reset();
-    }
+        if (urlParams.get('success') === '1') {
+            confirmation.style.display = 'block';
+            // vider les champs du formulaire
+            form.reset();
+        }
     </script>
 </body>
 </html>
